@@ -1,0 +1,156 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  font-family: "Outfit", sans-serif;
+
+  background: linear-gradient(
+    180deg,
+    #fff7fc 0%,
+    #ffffff 35%,
+    #fff4fb 70%,
+    #ffffff 100%
+  );
+}
+
+.hero-bg {
+  position: relative;
+  background:
+    radial-gradient(circle at top left,
+      rgba(236,72,153,.12),
+      transparent 35%),
+    radial-gradient(circle at bottom right,
+      rgba(236,72,153,.08),
+      transparent 35%);
+}
+
+.hero-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background-image:
+    linear-gradient(rgba(236,72,153,.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(236,72,153,.07) 1px, transparent 1px);
+
+  background-size: 48px 48px;
+
+  pointer-events: none;
+  z-index: -1;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-12px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.animate-float {
+  animation: float 5s ease-in-out infinite;
+}
+
+.hero-title {
+  font-family: "Sora", sans-serif;
+}
+
+.hero-name {
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+@keyframes shine {
+
+  0%{
+    left:-80px;
+  }
+
+  100%{
+    left:120%;
+  }
+
+}
+
+.animate-shine{
+
+  animation:shine 2.8s linear infinite;
+
+}
+html{
+  scroll-behavior:smooth;
+}
+.dark {
+  background: #0f172a;
+  color: white;
+  transition: .4s;
+}
+
+.dark body {
+  background: #0f172a;
+}
+/* ========================= */
+/* DARK MODE */
+/* ========================= */
+
+.dark {
+  background: #0b1120;
+  color: white;
+  transition: all .4s ease;
+}
+
+.dark body {
+  background: #0b1120;
+}
+
+/* Hero Background */
+
+.dark .hero-bg{
+  background:
+    radial-gradient(circle at top left,
+      rgba(236,72,153,.12),
+      transparent 35%),
+    radial-gradient(circle at bottom right,
+      rgba(192,132,252,.12),
+      transparent 35%);
+}
+
+/* Grid */
+
+.dark .hero-bg::before{
+  background-image:
+    linear-gradient(rgba(236,72,153,.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(236,72,153,.05) 1px, transparent 1px);
+}
+
+/* Glass Cards */
+
+.dark .glass-card{
+  background: rgba(30,41,59,.7);
+  backdrop-filter: blur(20px);
+  border:1px solid rgba(255,255,255,.08);
+}
+/* ========================= */
+/* Shared Glass Card */
+/* ========================= */
+
+.glass-card{
+  background: rgba(255,255,255,.75);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(251,207,232,.8);
+  transition: all .35s ease;
+}
+
+.dark .glass-card{
+  background: rgba(30,41,59,.75);
+  border: 1px solid rgba(255,255,255,.08);
+}
