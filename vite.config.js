@@ -4,8 +4,6 @@ import tailwindcss from "@tailwindcss/vite";
 import babel from "@rolldown/plugin-babel";
 
 export default defineConfig({
-  base: "/Meriam-Portfolio/",
-
   plugins: [
     react(),
     babel({ presets: [reactCompilerPreset()] }),
