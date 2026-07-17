@@ -1,4 +1,4 @@
-import orangeLogo from "../assets/logos/orange_logo.webp";
+import orangeLogo from "../assets/logos/Orange_logo.webp";
 import depiLogo from "../assets/logos/depi.png";
 import ntiLogo from "../assets/logos/nti.jfif";
 import { motion } from "framer-motion";
