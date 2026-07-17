@@ -49,7 +49,7 @@ function About() {
 
         <div className="text-center mb-16">
 
-  <p className="text-pink-500 text-[50px] font-bold uppercase tracking-[15px]">
+  <p className="text-pink-500 text-5xl font-bold uppercase tracking-[10px]">
     ABOUT ME
   </p>
 
@@ -67,7 +67,7 @@ function About() {
 </div>
 
         <p
-  className="text-center mx-auto text-gray-600 dark:text-gray-300 leading-10 max-w-[950px] text-[21px]"
+  className="text-center mx-auto text-gray-600 dark:text-gray-300 leading-10 max-w-[950px] text-[20px]"
 >
   I am an Artificial Intelligence Engineer passionate about building
   intelligent solutions using Machine Learning, Deep Learning,
@@ -109,33 +109,33 @@ duration-500
           
             </h3>
 
-            <ul className="mt-8 space-y-4 className="text-gray-600 dark:text-gray-300 text-lg>
+            <ul className="mt-8 space-y-4 text-gray-600 dark:text-gray-300 text-lg">
 
               <li className="flex items-center gap-3">
   <Sparkles
-    size={18}
+    size={16}
     className="text-fuchsia-500"
   />
   Machine Learning
 </li>
 <li className="flex items-center gap-3">
-   <Sparkles size={15} className="text-fuchsia-500" />
+   <Sparkles size={16} className="text-fuchsia-500" />
    Deep Learning
 </li>
 <li className="flex items-center gap-3">
-   <Sparkles size={15} className="text-fuchsia-500" />
+   <Sparkles size={16} className="text-fuchsia-500" />
    Computer Vision
 </li>
 <li className="flex items-center gap-3">
-   <Sparkles size={15} className="text-fuchsia-500" />
+   <Sparkles size={16} className="text-fuchsia-500" />
    NLP & LLMs
 </li>
 <li className="flex items-center gap-3">
-   <Sparkles size={15} className="text-fuchsia-500" />
+   <Sparkles size={16} className="text-fuchsia-500" />
    RAG Systems
 </li>
 <li className="flex items-center gap-3">
-  <Sparkles size={15} className="text-fuchsia-500" />
+  <Sparkles size={16} className="text-fuchsia-500" />
    AI Agents
 </li>
             </ul>
@@ -163,30 +163,30 @@ duration-500
               <div className="w-14 h-1 rounded-full bg-gradient-to-r from-pink-500 to-fuchsia-500 mt-3 mb-6"></div>
             </h3>
 
-            <ul className="mt-8 space-y-4 className="text-gray-600 dark:text-gray-300 text-lg>
+            <ul className="mt-8 space-y-4 text-gray-600 dark:text-gray-300 text-lg">
 
               <li className="flex items-center gap-3">
-   <Sparkles size={15} className="text-fuchsia-500" />
+   <Sparkles size={16} className="text-fuchsia-500" />
    Multi-Agent Systems
 </li>
 <li className="flex items-center gap-3">
-   <Sparkles size={15} className="text-fuchsia-500" />
+   <Sparkles size={16} className="text-fuchsia-500" />
    Generative AI
 </li>
 <li className="flex items-center gap-3">
-   <Sparkles size={15} className="text-fuchsia-500" />
+   <Sparkles size={16} className="text-fuchsia-500" />
    LangChain
 </li>
 <li className="flex items-center gap-3">
-   <Sparkles size={15} className="text-fuchsia-500" />
+   <Sparkles size={16} className="text-fuchsia-500" />
    Vector Databases
 </li>
 <li className="flex items-center gap-3">
-   <Sparkles size={15} className="text-fuchsia-500" />
+   <Sparkles size={16} className="text-fuchsia-500" />
    Prompt Engineering
 </li>
 <li className="flex items-center gap-3">
-   <Sparkles size={15} className="text-fuchsia-500" />
+   <Sparkles size={16} className="text-fuchsia-500" />
    AI Deployment
 </li>
             </ul>

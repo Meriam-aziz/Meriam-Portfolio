@@ -1,7 +1,7 @@
 import Button from "../components/Button";
 import cv from "../assets/pdf/Meriam_Aziz_AI_Engineer_CV.pdf";
 import profile from "../assets/images/profile.png";
-
+import { TypeAnimation } from "react-type-animation";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { motion } from "framer-motion";
@@ -22,10 +22,10 @@ function Hero() {
 <div className="absolute inset-0 -z-10">
 
   {/* Top Left Glow */}
-  <div className="absolute -top-32 -left-24 w-[420px] h-[420px] rounded-full bg-pink-200/40 blur-[120px]" />
+  <div className="absolute -top-32 -left-24 w-[420px] h-[420px] rounded-full bg-pink-200/40 dark:bg-pink-500/10 blur-[120px]" />
 
   {/* Bottom Right Glow */}
-  <div className="absolute bottom-0 right-0 w-[350px] h-[350px] rounded-full bg-fuchsia-200/30 blur-[120px]" />
+  <div className="absolute bottom-0 right-0 w-[350px] h-[350px] rounded-full bg-fuchsia-200/30 dark:bg-fuchsia-500/10 blur-[120px]" />
 
   {/* Small Glow */}
   <div className="absolute top-1/2 right-1/3 w-40 h-40 rounded-full bg-pink-100 blur-3xl" />
@@ -40,7 +40,9 @@ function Hero() {
 <div className="relative inline-block">
 
   <h1 className="hero-name text-7xl lg:text-[80px] font-extrabold leading-[0.9] tracking-[-3px]">
-    <span className="text-black">Meriam</span>{" "}
+    <span className="text-gray-900 dark:text-white">
+  Meriam
+</span>{" "}
     <span className="
 bg-gradient-to-r
 from-pink-500
@@ -74,9 +76,22 @@ Aziz
 
 </div>
     
-<h2 className="text-2xl text-gray-700 mt-3 font-medium">
-Artificial Intelligence Engineer
-</h2>
+<TypeAnimation
+sequence={[
+"Artificial Intelligence Engineer",
+2000,
+"Machine Learning Engineer",
+2000,
+"AI Agent Developer",
+2000,
+"LLM Engineer",
+2000,
+]}
+wrapper="h2"
+speed={50}
+repeat={Infinity}
+className="text-2xl text-gray-700 mt-3 font-medium"
+/>
 <div className="mt-6">
 
     <div className="w-24 h-[3px] rounded-full bg-gradient-to-r from-pink-500 to-transparent"></div>
@@ -86,96 +101,101 @@ Artificial Intelligence Engineer
 </div>
 
     <p className="mt-8 text-lg leading-9 text-gray-500 dark:text-gray-400 max-w-xl">
-      Building intelligent AI solutions with Machine Learning,
-      Deep Learning, Computer Vision, NLP,
-      LLMs, RAG & AI Agents.
+      Building intelligent AI solutions using Computer Vision,
+Natural Language Processing, LLMs,
+RAG Systems, AI Agents, and Deep Learning.
     </p>
 
-    <div className="flex gap-6 mt-12">
-      <Button>🚀 Explore Projects</Button>
+    <div className="flex gap-6 hover:shadow-[0_20px_50px_rgba(236,72,153,.35)] mt-12">
+      <a href="#projects">
+  <Button>
+  Explore Projects
+</Button>
 
-      <a href={cv} download>
-        <Button variant="secondary">
-          ⬇ Download CV
-        </Button>
+<Button variant="secondary">
+  Download CV
+</Button>
       </a>
     </div>
 
-    <div className="flex items-center gap-5 mt-12">
-
-      <a
-        href="https://github.com/Meriam-aziz"
-        target="_blank"
-        rel="noreferrer"
-        className="
-w-12
-h-12
-rounded-full
-bg-white
-shadow-md
-flex
-items-center
-justify-center
-hover:bg-pink-500
-hover:text-white
-transition-all
-hover:shadow-xl
-duration-300
-hover:-translate-y-1
-"
-      >
-        <FaGithub />
-      </a>
-
-      <a
-        href="https://www.linkedin.com/in/meriam-aziz"
-        target="_blank"
-        rel="noreferrer"
-       className="
-w-12
-h-12
-rounded-full
-bg-white
-shadow-md
-flex
-items-center
-justify-center
-hover:bg-pink-500
-hover:text-white
-hover:shadow-xl
-transition-all
-duration-300
-hover:-translate-y-1
-"
+    <motion.div
+  initial={{ opacity: 0 }}
+  whileInView={{ opacity: 1 }}
+  transition={{ delay: 0.6 }}
+  className="flex items-center gap-5 mt-12"
 >
-        <FaLinkedinIn />
-      </a>
+  <a
+    href="https://github.com/Meriam-aziz"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="
+    w-12
+    h-12
+    rounded-full
+    bg-white
+    shadow-md
+    flex
+    items-center
+    justify-center
+    hover:bg-pink-500
+    hover:text-white
+    transition-all
+    hover:shadow-xl
+    duration-300
+    hover:-translate-y-1
+    "
+  >
+    <FaGithub />
+  </a>
 
-      <a
-        href="mailto:YOUR_EMAIL"
-        className="
-w-12
-h-12
-rounded-full
-bg-white
-shadow-md
-flex
-items-center
-justify-center
-hover:bg-pink-500
-hover:text-white
-hover:shadow-xl
-transition-all
-duration-300
-hover:-translate-y-1
-"
-      >
-        <MdEmail />
-      </a>
+  <a
+    href="https://www.linkedin.com/in/meriam-aziz"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="
+    w-12
+    h-12
+    rounded-full
+    bg-white
+    shadow-md
+    flex
+    items-center
+    justify-center
+    hover:bg-pink-500
+    hover:text-white
+    hover:shadow-xl
+    transition-all
+    duration-300
+    hover:-translate-y-1
+    "
+  >
+    <FaLinkedinIn />
+  </a>
+
+  <a
+    href="mailto:Meriamaziz000@gmail.com"
+    className="
+    w-12
+    h-12
+    rounded-full
+    bg-white
+    shadow-md
+    flex
+    items-center
+    justify-center
+    hover:bg-pink-500
+    hover:text-white
+    hover:shadow-xl
+    transition-all
+    duration-300
+    hover:-translate-y-1
+    "
+  >
+    <MdEmail />
+  </a>
+</motion.div>
 
     </div>
-
-  </div>
 
   {/* RIGHT SIDE */}
 
@@ -224,10 +244,14 @@ className="w-1.5 h-1.5 rounded-full bg-pink-300"
 <div className="absolute w-[510px] h-[510px] rounded-full shadow-[0_0_120px_rgba(236,72,153,.18)]"></div>
    {/* Large Circle */}
 <div className="absolute w-[580px] h-[580px] rounded-full border border-pink-300/40"></div>
-<div className="absolute w-[580px] h-[580px] rounded-full border border-pink-100/60"></div>
+<div className="absolute w-[580px] h-[580px] rounded-full border
+border-pink-100
+dark:border-slate-700/60"></div>
 
 <div className="absolute w-[640px] h-[640px] rounded-full border border-pink-50/40"></div>
-<div className="absolute w-[560px] h-[560px] rounded-full border border-pink-100/60"></div>
+<div className="absolute w-[560px] h-[560px] rounded-full border
+border-pink-100
+dark:border-slate-700/60"></div>
     {/* Decorative Circles */}
     <div className="absolute -top-6 left-8 w-6 h-6 rounded-full border-2 border-pink-300"></div>
 
@@ -246,10 +270,17 @@ className="w-1.5 h-1.5 rounded-full bg-pink-300"
 ))}
 
 </div>
-    <img
-      src={profile}
-      alt="Meriam Aziz"
-      className="
+    <motion.img
+  src={profile}
+  alt="Meriam Aziz AI Engineer"
+  initial={{ opacity: 0, scale: 0.8 }}
+  whileInView={{ opacity: 1, scale: 1 }}
+  transition={{ duration: 0.8 }}
+  whileHover={{
+    scale: 1.05,
+    rotate: 2,
+  }}
+  className="
 relative
 w-[430px]
 lg:w-[520px]
@@ -257,11 +288,9 @@ object-contain
 animate-float
 transition-all
 duration-500
-hover:scale-[1.02]
-hover:-translate-y-2
 drop-shadow-[0_35px_70px_rgba(236,72,153,.28)]
 "
-    />
+/>
 
   </div>
 </div>

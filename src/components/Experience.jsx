@@ -80,7 +80,7 @@ function Experience() {
           </div>
 
           <p className="mt-5 text-gray-700 text-lg max-w-2xl mx-auto">
-            Hands-on experience through internships and AI training programs.
+           Hands-on experience gained through internships and AI development programs.
           </p>
 
         </div>
@@ -129,16 +129,22 @@ function Experience() {
 
   <div
     className="
-    glass-card
-    rounded-3xl
-    p-6
-    shadow-[0_15px_40px_rgba(236,72,153,.12)]
-    hover:-translate-y-1
-    hover:scale-[1.01]
-    hover:shadow-[0_20px_50px_rgba(236,72,153,.18)]
-    transition-all
-    duration-500
-    "
+glass-card
+rounded-3xl
+p-6
+border
+border-pink-100
+dark:border-slate-700
+shadow-[0_15px_40px_rgba(236,72,153,.12)]
+dark:shadow-[0_15px_40px_rgba(0,0,0,.45)]
+hover:border-pink-300
+dark:hover:border-pink-500
+hover:-translate-y-1
+hover:scale-[1.01]
+hover:shadow-[0_20px_50px_rgba(236,72,153,.18)]
+transition-all
+duration-500
+"
   >
 
     <div className="flex justify-between items-center">
@@ -147,7 +153,7 @@ function Experience() {
 
   <img
     src={orangeLogo}
-    alt="Orange"
+    alt="Orange Digital Center Logo"
     className="w-8 h-8 object-contain"
   />
 
@@ -179,11 +185,11 @@ function Experience() {
 
     <ul className="mt-5 space-y-2 text-gray-700">
 
-      <li>✔ Developed AI Agent applications using Gemini API.</li>
+      <li>✔ Designed and developed AI agent applications using the Gemini API.</li>
 
-      <li>✔ Built multi-agent workflows with LangChain.</li>
+      <li>✔ Built and orchestrated multi-agent workflows using LangChain.</li>
 
-      <li>✔ Created interactive AI interfaces using Streamlit.</li>
+      <li>✔ Developed interactive AI applications with Streamlit.</li>
 
     
     </ul>
@@ -248,16 +254,22 @@ function Experience() {
 
   <div
     className="
-    glass-card
-    rounded-3xl
-    p-6
-    shadow-[0_15px_40px_rgba(236,72,153,.12)]
-    hover:-translate-y-1
-    hover:scale-[1.01]
-    hover:shadow-[0_20px_50px_rgba(236,72,153,.18)]
-    transition-all
-    duration-500
-    "
+glass-card
+rounded-3xl
+p-6
+border
+border-pink-100
+dark:border-slate-700
+shadow-[0_15px_40px_rgba(236,72,153,.12)]
+dark:shadow-[0_15px_40px_rgba(0,0,0,.45)]
+hover:border-pink-300
+dark:hover:border-pink-500
+hover:-translate-y-1
+hover:scale-[1.01]
+hover:shadow-[0_20px_50px_rgba(236,72,153,.18)]
+transition-all
+duration-500
+"
   >
 
     <div className="flex justify-between items-center">
@@ -270,7 +282,7 @@ function Experience() {
 
     src={depiLogo}
 
-    alt="depi" 
+    alt="DEPI Logo" 
 
     className="w-8 h-8 object-contain"
 
@@ -310,11 +322,11 @@ function Experience() {
 
     <ul className="mt-5 space-y-2 text-gray-700">
 
-      <li>✔ Built Machine Learning and Deep Learning models.</li>
+      <li>✔ Developed Machine Learning and Deep Learning models.</li>
 
-      <li>✔ Worked on Computer Vision and NLP applications.</li>
+      <li>✔ Built Computer Vision and Natural Language Processing applications.</li>
 
-      <li>✔ Applied data preprocessing and model evaluation techniques.</li>
+      <li>✔ Applied data preprocessing, feature engineering, and model evaluation techniques.</li>
 
     </ul>
 
@@ -379,16 +391,22 @@ function Experience() {
 
   <div
     className="
-    glass-card
-    rounded-3xl
-    p-6
-    shadow-[0_15px_40px_rgba(236,72,153,.12)]
-    hover:-translate-y-1
-    hover:scale-[1.01]
-    hover:shadow-[0_20px_50px_rgba(236,72,153,.18)]
-    transition-all
-    duration-500
-    "
+glass-card
+rounded-3xl
+p-6
+border
+border-pink-100
+dark:border-slate-700
+shadow-[0_15px_40px_rgba(236,72,153,.12)]
+dark:shadow-[0_15px_40px_rgba(0,0,0,.45)]
+hover:border-pink-300
+dark:hover:border-pink-500
+hover:-translate-y-1
+hover:scale-[1.01]
+hover:shadow-[0_20px_50px_rgba(236,72,153,.18)]
+transition-all
+duration-500
+"
   >
 
     <div className="flex justify-between items-center">
@@ -401,7 +419,7 @@ function Experience() {
 
     src={ntiLogo}
 
-    alt="nti" 
+    alt="National Telecommunication Institute Logo" 
 
     className="w-8 h-8 object-contain"
 
@@ -441,11 +459,11 @@ function Experience() {
 
     <ul className="mt-5 space-y-2 text-gray-700">
 
-      <li>✔ Learned Machine Learning fundamentals and AI algorithms.</li>
+      <li>✔ Studied Machine Learning fundamentals and core AI algorithms.</li>
 
-      <li>✔ Trained on data preprocessing and model deployment.</li>
+      <li>✔ Practiced data preprocessing and AI model deployment.</li>
 
-      <li>✔ Completed hands-on AI projects during the summer training.</li>
+      <li>✔ Completed practical AI projects during the summer training program.</li>
 
     </ul>
 

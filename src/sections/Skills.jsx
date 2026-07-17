@@ -101,8 +101,7 @@ function Skills() {
           <div className="flex justify-center mt-10">
             <div className="w-28 h-1 rounded-full bg-gradient-to-r from-pink-500 to-fuchsia-500"></div>
           </div>
-<p className="mt-5 text-gray-500 dark:text-gray-400 text-[17px]
-leading-8 text-lg max-w-2xl mx-auto">
+<p className="mt-5 text-gray-500 dark:text-gray-400 leading-8 text-lg max-w-2xl mx-auto">
 A collection of the technologies, frameworks, and AI tools I use to build intelligent solutions.
 </p>
         </div>
@@ -118,6 +117,7 @@ A collection of the technologies, frameworks, and AI tools I use to build intell
       min-h-[240px]
       px-8 py-7
       shadow-[0_15px_40px_rgba(236,72,153,.12)]
+      dark:shadow-[0_15px_40px_rgba(0,0,0,.45)]
       hover:-translate-y-3
       hover:shadow-[0_25px_60px_rgba(236,72,153,.18)]
       transition-all

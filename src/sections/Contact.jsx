@@ -26,7 +26,7 @@ function Contact() {
             <div className="w-28 h-1 rounded-full bg-gradient-to-r from-pink-500 to-fuchsia-500"></div>
           </div>
 
-          <p className="mt-5 className="text-gray-600 dark:text-gray-300 text-lg max-w-2xl mx-auto>
+          <p className="mt-5 text-gray-600 dark:text-gray-300 text-lg max-w-2xl mx-auto">
             Have an AI project, collaboration, or opportunity?
             I'd love to hear from you.
           </p>
@@ -43,19 +43,22 @@ function Contact() {
             className="
             rounded-[36px]
             bg-white/80
+dark:bg-slate-900/70
             backdrop-blur-xl
-            border border-pink-100
+            border
+border-pink-100
+dark:border-slate-700
             p-10
             shadow-[0_15px_40px_rgba(236,72,153,.12)]
+            dark:shadow-[0_15px_40px_rgba(0,0,0,.45)]
             "
           >
 
-            <h3 className="text-3xl font-bold className="text-gray-900 dark:text-white>
-              Get In Touch
+            <h3 className="text-3xl font-bold text-gray-900 dark:text-white">
+              Let's Connect
             </h3>
 
-            <p className="mt-4 className="text-gray-600 dark:text-gray-300 leading-7>
-              I'm always open to discussing AI projects,
+            <p className="mt-4 text-gray-600 dark:text-gray-300 leading-7">
               internships, full-time opportunities,
               or simply connecting with fellow developers.
             </p>
@@ -68,19 +71,23 @@ function Contact() {
             className="
             rounded-[36px]
             bg-white/80
+dark:bg-slate-900/70
             backdrop-blur-xl
-            border border-pink-100
+            border
+border-pink-100
+dark:border-slate-700
             p-10
             shadow-[0_15px_40px_rgba(236,72,153,.12)]
+            dark:shadow-[0_15px_40px_rgba(0,0,0,.45)]
             "
           >
 
-            <h3 className="text-3xl font-bold className="text-gray-900 dark:text-white>
+           <h3 className="text-3xl font-bold text-gray-900 dark:text-white">
               Send Message
             </h3>
 
-            <p className="mt-4 text-gray-className="text-gray-600 dark:text-gray-300>
-              Contact form will be added here.
+            <p className="mt-4 text-gray-600 dark:text-gray-300">
+              Available for freelance, internships, AI collaborations, and full-time opportunities.
             </p>
 
           </div>

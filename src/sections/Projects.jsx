@@ -86,7 +86,7 @@ function Projects() {
             <div className="w-28 h-1 rounded-full bg-gradient-to-r from-pink-500 to-fuchsia-500"></div>
           </div>
 
-          <p className="mt-5 className="text-gray-600 dark:text-gray-300 text-lg max-w-2xl mx-auto>
+          <p className="mt-5 text-gray-600 dark:text-gray-300 text-lg max-w-2xl mx-auto">
             A selection of AI projects showcasing Machine Learning,
             Computer Vision, LLMs, RAG systems, and AI Agents.
           </p>
@@ -96,12 +96,22 @@ function Projects() {
   {projects.map((project, index) => (
     <div
       key={index}
-      className="group rounded-[36px] overflow-hidden bg-white/80 backdrop-blur-xl shadow-[0_20px_50px_rgba(236,72,153,.12)] hover:-translate-y-2 hover:shadow-2xl hover:scale-[1.02] transition-all duration-500"
+      className="group rounded-[36px] overflow-hidden bg-white/80
+dark:bg-slate-900/70 backdrop-blur-xl shadow-[0_20px_50px_rgba(236,72,153,.12)] hover:-translate-y-2 hover:shadow-2xl hover:scale-[1.02] transition-all duration-500"
     >
       <img
         src={project.image}
         alt={project.title}
-        className="w-full h-64 object-cover group-hover:scale-105 transition duration-500"
+        className="
+w-full
+h-64
+object-cover
+object-top
+group-hover:scale-110
+transition
+duration-500
+"
+loading="lazy"
       />
 
       <div className="p-6 relative">
@@ -113,14 +123,14 @@ function Projects() {
   text-5xl
   font-black
   text-pink-400
-  opacity-30
+  opacity-15
   select-none
   "
 >
   {project.number}
 </p>
 
-<h3 className="text-[28px] font-bold className="text-gray-900 dark:text-white mt-2>
+<h3 className="text-[28px] font-bold text-gray-900 dark:text-white mt-2">
   {project.title}
 </h3>
 
@@ -204,7 +214,8 @@ duration-300
       "
     >
       
-      🚀 Live Demo
+     <HiOutlineArrowTopRightOnSquare size={18} />
+Live Demo
     </a>
   )}
 
@@ -231,7 +242,7 @@ const projects = [
   number: "01",
   title: "AIOS",
   subtitle: "Multi-Agent Incident Response",
-  description:"An AI-powered emergency response system using autonomous agents." ,
+  description:"An AI-powered multi-agent emergency response system that coordinates incident management using autonomous AI agents." ,
   image: aiosCover,
 
   tech: [
@@ -249,7 +260,7 @@ const projects = [
     number: "02",
     title: "Deaf AI Chatbot",
     subtitle: "Arabic Sign Language Recognition",
-    description:"Recognizes Arabic sign language and converts gestures into text using AI.",
+    description:"Recognizes Arabic Sign Language gestures and converts them into text using Computer Vision and Generative AI.",
     image: deafCover,
     tech: [
 "Python",
@@ -265,8 +276,8 @@ const projects = [
   {
     number: "03",
     title: "Diabetes Prediction",
-    subtitle: "Machine Learning",
-    description:"Predicts diabetes risk using machine learning classification models.",
+    subtitle: "Predictive Analytics",
+    description:"Predicts diabetes risk using supervised machine learning classification algorithms.",
     image: diabetsCover,
     tech: [
 "Python",
@@ -283,7 +294,7 @@ const projects = [
     number: "04",
     title: "MNIST Recognition",
     subtitle: "Deep Learning",
-    description:"Recognizes handwritten digits using deep learning and CNN models.",
+    description:"Recognizes handwritten digits using Convolutional Neural Networks (CNNs).",
     image: mnistCover,
     tech: [
 "Python",
@@ -297,8 +308,8 @@ const projects = [
   {
     number: "05",
     title: "Malicious URL Detection",
-    subtitle: "Cyber Security",
-    description:"Detects malicious websites using machine learning and NLP techniques.",
+    subtitle: "Cybersecurity AI",
+    description:"Detects malicious URLs using machine learning and natural language processing techniques.",
     image: urlCover,
     tech: [
 "Python",
@@ -313,8 +324,8 @@ github: "https://github.com/Meriam-aziz/Malicious-URL-Detection-using-Machine-Le
   {
     number: "06",
   title: "OCR License Plate Recognition",
-  subtitle: "Computer Vision",
-  description:"Detects and reads vehicle license plates using OCR and computer vision.",
+  subtitle: "OCR & Computer Vision",
+  description:"Detects and extracts vehicle license plate numbers using YOLOv8 and OCR.",
   image: ocrCover,
 
   tech: [

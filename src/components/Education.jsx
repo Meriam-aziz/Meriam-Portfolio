@@ -66,7 +66,7 @@ function Education() {
             <div className="w-28 h-1 rounded-full bg-gradient-to-r from-pink-500 to-fuchsia-500"></div>
           </div>
 
-          <p className="mt-5 className="text-gray-600 dark:text-gray-300 text-lg max-w-2xl mx-auto>
+          <p className="mt-5 text-gray-600 dark:text-gray-300 text-lg max-w-2xl mx-auto">
             My educational background and academic achievements in Artificial Intelligence.
           </p>
 
@@ -84,6 +84,7 @@ function Education() {
   rounded-[36px]
   p-6
   shadow-[0_15px_40px_rgba(236,72,153,.12)]
+  dark:shadow-[0_15px_40px_rgba(0,0,0,.45)]
   hover:-translate-y-2
   hover:shadow-[0_25px_60px_rgba(236,72,153,.18)]
   transition-all
